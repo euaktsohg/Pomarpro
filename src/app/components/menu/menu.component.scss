@@ -1,0 +1,78 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f18100;
+    color: #09ff00;
+    padding: 10px 0;
+    transform: 100px;
+    transition: 100px;
+   
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transform: 100px;
+    transition: 100px;
+    display: flex;
+    
+    justify-content: center;
+    align-items:center ;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: #1eff00;
+}
+
+
+
+
+
+.banner {
+ background-image: url('/assets/img/tangerina1080p.jpg');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffae00;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #15ff00;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+details div{
+    display: flex;
+    flex-direction: column;
+
+}

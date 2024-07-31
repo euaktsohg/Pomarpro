@@ -12,8 +12,8 @@ export class UsuarioService {
 
 public addUsuario(info:any):Observable<any>{
   return this.http.post(
-    'http://localhost/usuario/add',
-    info,
+    'http://localhost:3000/usuario/add',
+    {info},
     {observe:'response'}
   )
 }

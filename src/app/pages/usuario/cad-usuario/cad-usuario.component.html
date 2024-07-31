@@ -7,28 +7,28 @@
     <div>
       <mat-form-field appearance="outline" color="accent">
         <mat-label>Nome</mat-label>
-        <input matInput  formControlName ="nome"/>
+        <input matInput  formControlName="nome"/>
       </mat-form-field>
       <mat-form-field appearance="outline" color="accent">
         <mat-label>Sobrenome</mat-label>
 
-        <input matInput formControlName = "sobrenome"/>
+        <input matInput formControlName="sobrenome"/>
       </mat-form-field>
     </div>
     <div>
       <mat-form-field appearance="outline" color="accent" class="grande">
         <mat-label>Endereço</mat-label>
-        <input matInput formControlName = endereco/>
+        <input matInput formControlName="endereco"/>
       </mat-form-field>
     </div>
     <form>
       <mat-form-field appearance="outline" color="accent">
         <mat-label>Telefone</mat-label>
-        <input matInput formControlName ="telefone"/>
+        <input matInput formControlName="telefone"/>
       </mat-form-field>
       <mat-form-field appearance="outline" color="accent">
         <mat-label>Email</mat-label>
-        <input matInput formControlName = "email"/>
+        <input matInput formControlName="email"/>
       </mat-form-field>
       <div>
         <mat-form-field appearance="outline" color="accent">
@@ -36,12 +36,17 @@
           <input matInput formControlName="login"/>
         </mat-form-field>
         <div class="controles">
-          <button mat-raised-button [disabled]="formulario.enabled"(click)="onIncluir()">Incluir</button>
-          <button mat-raised-button [disabled]="formulario.invalid"(click)="onSalvar()">Salvar</button>
-          <button mat-raised-button [disabled]="formulario.disabled"(click)="onCancelar()">Cancelar</button>
+          <button type="button" mat-raised-button [disabled]="formulario.enabled" (click)="onIncluir()">Incluir</button>
+          <button type="button" mat-raised-button [disabled]="formulario.invalid" (click)="onSalvar()">Salvar</button>
+          <button type="button" mat-raised-button [disabled]="formulario.disabled" (click)="onCancelar()">Cancelar</button>
         </div>
       </div>
     </form>
-    <div></div>
+    <div class="relatorio">
+      <h2>Usuários Cadastros</h2>
+      <table>
+        
+      </table>
+    </div>
   </form>
 </div>
